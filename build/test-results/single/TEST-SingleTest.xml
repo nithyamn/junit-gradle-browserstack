@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SingleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-27T14:07:55" hostname="Nithyas-MacBook-Pro.local" time="14.269">
+  <properties/>
+  <testcase name="test[0]" classname="SingleTest" time="14.269"/>
+  <system-out><![CDATA[inside single
+]]></system-out>
+  <system-err><![CDATA[Dec 27, 2019 7:38:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

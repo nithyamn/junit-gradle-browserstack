@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+}
+
+group 'junitgradle'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.13.0'
+    implementation 'com.browserstack:browserstack-local-java:0.3.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+group = 'com.browserstack'
+version = '1.0-SNAPSHOT'
+description = 'junit-browserstack'
+sourceCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task single(type: Test){
+    useJUnit()
+    testLogging {
+        showStandardStreams = true
+    }
+    include '**/SingleTest.class'
+    systemProperty "config", "single"
+}
+task local(type: Test){
+    useJUnit()
+    testLogging {
+        showStandardStreams = true
+    }
+    include '**/LocalTest.class'
+    systemProperty "config", "local"
+}
+task parallel(type: Test){
+    useJUnit()
+    testLogging {
+        showStandardStreams = true
+    }
+    include '**/SingleTest.class'
+    systemProperty "config", "parallel"
+}

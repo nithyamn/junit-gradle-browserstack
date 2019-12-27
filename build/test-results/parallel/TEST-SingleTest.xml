@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SingleTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-12-27T14:08:44" hostname="Nithyas-MacBook-Pro.local" time="20.678">
+  <properties/>
+  <testcase name="test[3]" classname="SingleTest" time="17.798"/>
+  <testcase name="test[2]" classname="SingleTest" time="18.54"/>
+  <testcase name="test[1]" classname="SingleTest" time="19.99"/>
+  <testcase name="test[0]" classname="SingleTest" time="20.678"/>
+  <system-out><![CDATA[inside single
+inside single
+inside single
+inside single
+]]></system-out>
+  <system-err><![CDATA[Dec 27, 2019 7:38:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Dec 27, 2019 7:38:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Dec 27, 2019 7:38:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Dec 27, 2019 7:38:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
